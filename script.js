@@ -1,12 +1,12 @@
- function randomGen (max) {
-    return Math.floor(Math.random() * max)
+ function randomGen () {
+    return Math.floor(Math.random() * 3)
 }
 
 const userInt = parseInt(prompt("Rock, Paper & Scissors! Escolha 0 para Papel, 1 para Pedra, ou 2 para Tesoura."))
 console.log(`Você escolheu ${userInt}.`)
 
 function play() {
-    const enemy = randomGen(3)
+    const enemy = randomGen()
     console.log(`O inimigo escolheu ${enemy}.`)
     if (userInt == 0 && enemy == 1 || userInt == 1 && enemy == 2 || userInt == 2 && enemy == 0) {
        
